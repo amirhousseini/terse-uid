@@ -1,0 +1,22 @@
+{
+  "name": "terse-uid",
+  "version": "1.0.0",
+  "description": "Generate unique identifiers as 16 alphanumerical strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/terse-uid-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirhousseini/terse-uid.git"
+  },
+  "keywords": [
+    "uid"
+  ],
+  "author": "Amir Housseini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amirhousseini/terse-uid/issues"
+  },
+  "homepage": "https://github.com/amirhousseini/terse-uid#readme"
+}
