@@ -1,7 +1,7 @@
 {
   "name": "terse-uid",
   "version": "1.0.0",
-  "description": "Generate unique identifiers as 16 alphanumerical strings",
+  "description": "Factory of unique identifiers as strings of 16 alphanumerical characters, all lowercase.",
   "main": "index.js",
   "scripts": {
     "test": "node test/terse-uid-test.js"
