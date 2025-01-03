@@ -1,5 +1,5 @@
 # terse-uid
-Factory of unique identifiers as strings of 16 alphanumerical characters, all lowercase.\
+Factory of unique identifiers in the form of strings of 16 alphanumerical characters, all lowercase.\
 
 This module exports a single function without argument that returns a unique identifiers each time it is called.\
 
