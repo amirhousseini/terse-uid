@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-const newUid = require('terse-uid');
+const uid = require('terse-uid');
 
 const count = 1000000;
 
@@ -8,7 +8,7 @@ const count = 1000000;
 console.log("Generating", count, "UIDs...");
 let uids = new Set();
 for (let i = 0; i < count; i++) {
-    uids.add(newUid());
+    uids.add(uid());
 }
 
 // Check for duplicates
