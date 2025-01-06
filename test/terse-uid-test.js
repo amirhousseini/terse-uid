@@ -1,6 +1,6 @@
 'use strict';
 
-const uid = require('terse-uid');
+const uid = require('../index.js');
 
 const count = 1000000;
 
