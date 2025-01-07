@@ -2,11 +2,10 @@
  * Module providing a single function that return unique identifiers (UID)
  * in the form of strings of 16 alphanumerical characters, all lowercase.
  * To achieve uniqueness UIDs are built from the following number components:
- *  - an round-robin counter initialized to some random number,
+ *  - a round-robin counter initialized to some random number,
  *  - the current time in milliseconds since 2025-01-01 00:00:00.000,
  *  - a context value derived from the process identifier, the thread identifier, and a random number.
- * The UIDs are not guaranteed unique in a universal sense.
- * But duplicates are practically impossible.
+ * Universal uniqueness is not guaranteed, however duplicate UIDs are practically improbable.
  */
 
 'use strict';
@@ -19,7 +18,7 @@ const counterLen = 3;
 const timeLen    = 8;
 const contextLen = 5;
 
-// Highest possible radix for encoding numbers to strings
+// Radix used for encoding numbers to strings
 const radix = 36;
 // 2025-01-01 00:00:00.000 in milliseconds since epoch 
 const timeBase = (new Date(2025, 0, 1)).getTime();
@@ -27,7 +26,7 @@ const timeBase = (new Date(2025, 0, 1)).getTime();
 // The context component
 const contextComponent = getContextComponent();
 
-// The static counter being incremented with each UID generated,
+// The static round-robin counter incremented with each UID generated,
 // initialized to some random value in range
 const maxCounter = Math.pow(radix, counterLen);
 var counter = randomInt(maxCounter);
