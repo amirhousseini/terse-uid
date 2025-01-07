@@ -21,7 +21,7 @@ for (let i = 0; i < 100; i++) {
 ```sh
 $ npm test
 
-> terse-uid@1.1.1 test
+> terse-uid@1.1.2 test
 > node test/terse-uid-test.js
 
 Generating 1000000 UIDs...
