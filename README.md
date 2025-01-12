@@ -21,16 +21,16 @@ for (let i = 0; i < 100; i++) {
 ```sh
 $ npm test
 
-> terse-uid@1.1.2 test
+> terse-uid@1.1.3 test
 > node test/terse-uid-test.js
 
 Generating 1000000 UIDs...
 OK, all UIDs are distinct.
 Samples:
-c7tonp53900nlcr0
-liha4p53900nlcr0
-oy6xpp53900nlcr0
-c2xdro53900nlcr0
-vqa9zo53900nlcr0
-ickqso53900nlcr0
+wm3uqxn45zk9fg00
+71chmuz4dql9fg00
+c3x7n0z4pol9fg00
+3mbgzfp4a2l9fg00
+cb2cnem40wk9fg00
+zvvioos4p8l9fg00
 ```
