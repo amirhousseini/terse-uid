@@ -1,6 +1,6 @@
 {
   "name": "terse-uid",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Generator of unique identifiers as strings of 16 lowercase alphanumerical characters.",
   "keywords": [
     "uid"
@@ -13,13 +13,13 @@
   "author": "Amir Housseini",
   "type": "module",
   "exports": {
-    ".": "./src/terse-uid.js"
+    ".": "./src/terse_uid.js"
   },
   "repository": "github:amirhousseini/terse-uid",
   "scripts": {
     "test": "node --test",
-    "demo:mjs": "node examples/terse-uid.demo.mjs",
-    "demo:cjs": "node examples/terse-uid.demo.cjs"
+    "demo:mjs": "node examples/terse_uid.demo.mjs",
+    "demo:cjs": "node examples/terse_uid.demo.cjs"
   },
   "devDependencies": {
     "chai": "^6.2.1"

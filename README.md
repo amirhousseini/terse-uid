@@ -26,17 +26,17 @@ for (let uid of uidGener(NUM_UID)) console.log(uid);
 ```sh
 $ npm test
 
-> terse-uid@2.0.0 test
+> terse-uid@2.0.3 test
 > node --test
 
 ▶ Unit tests of getUid()
-  ✔ Verify uniqueness of the 1000000 generated UIDs (243.569685ms)
-  ✔ Verify that all 1000000 generated UIDs consist of 16 lowercase alphanumeric characters (0.203052ms)
-✔ Unit tests of getUid() (249.917866ms)
+  ✔ Verify uniqueness of the 1000000 generated UIDs (264.637775ms)
+  ✔ Verify that all 1000000 generated UIDs consist of 16 lowercase alphanumeric characters (0.239901ms)
+✔ Unit tests of getUid() (272.198405ms)
 ▶ Unit tests of uidGener()
-  ✔ Verify uniqueness of the 1000000 generated UIDs (203.652075ms)
-  ✔ Verify that all 1000000 generated UIDs consist of 16 lowercase alphanumeric characters (0.123726ms)
-✔ Unit tests of uidGener() (203.926268ms)
+  ✔ Verify uniqueness of the 1000000 generated UIDs (208.298563ms)
+  ✔ Verify that all 1000000 generated UIDs consist of 16 lowercase alphanumeric characters (0.1242ms)
+✔ Unit tests of uidGener() (208.595864ms)
 ℹ tests 4
 ℹ suites 2
 ℹ pass 4
@@ -44,5 +44,5 @@ $ npm test
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 4500.885101
+ℹ duration_ms 5427.384828
 ```
