@@ -1,22 +1,31 @@
 {
   "name": "terse-uid",
-  "version": "1.1.3",
-  "description": "Factory of unique identifiers as strings of 16 alphanumerical characters, all lowercase.",
-  "main": "index.js",
-  "scripts": {
-    "test": "node test/terse-uid-test.js"
+  "version": "2.0.0",
+  "description": "Generator of unique identifiers as strings of 16 lowercase alphanumerical characters.",
+  "keywords": [
+    "uid"
+  ],
+  "homepage": "https://github.com/amirhousseini/terse-uid#readme",
+  "bugs": {
+    "url": "https://github.com/amirhousseini/terse-uid/issues"
+  },
+  "license": "MIT",
+  "author": "Amir Housseini",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./terse-uid.js": "./src/terse-uid.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amirhousseini/terse-uid.git"
   },
-  "keywords": [
-    "uid"
-  ],
-  "author": "Amir Housseini",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/amirhousseini/terse-uid/issues"
+  "scripts": {
+    "test": "node --test",
+    "demo:mjs": "node examples/terse-uid.demo.mjs",
+    "demo:cjs": "node examples/terse-uid.demo.cjs"
   },
-  "homepage": "https://github.com/amirhousseini/terse-uid#readme"
+  "devDependencies": {
+    "chai": "^6.2.1"
+  }
 }

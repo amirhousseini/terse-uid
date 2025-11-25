@@ -1,7 +1,7 @@
 # terse-uid
-Factory of unique identifiers in the form of strings of 16 alphanumerical characters, all lowercase.\
-The module exports a single anonymous function without argument that returns a unique identifier each time it is called.\
-See test/terse-uid-test.js for a usage example.
+Factory of unique identifiers (UID) as strings of 16 lowercase alphanumerical characters (e.g. "bi2vepv3612gd1d0").\
+The module exports a regular function "uid" returning a single UID, and a generator function "uidGener" returning a sequence of UIDs.\
+The generator function is more efficient for generating a high number of UIDs.
 
 ## Install
 ```
@@ -10,27 +10,39 @@ $ npm install terse-uid
 
 ## Usage
 ```js
-const uid = require('terse-uid');
+import { uid, uidGener } from 'terse-uid';          // ESM style
+//const { uid, uidGener } = require('terse-uid');   // CommonJS style
 
-for (let i = 0; i < 100; i++) {
-    console.log(uid());
-}
+const NUM_UID = 10;
+
+// Using regular function
+for (let i = 0; i < NUM_UID; i++) console.log(uid());
+
+// Using generator function
+for (let uid of uidGener(NUM_UID)) console.log(uid);
 ```
 
-## Test ouput example
+## Test sample
 ```sh
 $ npm test
 
-> terse-uid@1.1.3 test
-> node test/terse-uid-test.js
+> terse-uid@2.0.0 test
+> node --test
 
-Generating 1000000 UIDs...
-OK, all UIDs are distinct.
-Samples:
-wm3uqxn45zk9fg00
-71chmuz4dql9fg00
-c3x7n0z4pol9fg00
-3mbgzfp4a2l9fg00
-cb2cnem40wk9fg00
-zvvioos4p8l9fg00
+▶ Unit tests of getUid()
+  ✔ Verify uniqueness of the 1000000 generated UIDs (243.569685ms)
+  ✔ Verify that all 1000000 generated UIDs consist of 16 lowercase alphanumeric characters (0.203052ms)
+✔ Unit tests of getUid() (249.917866ms)
+▶ Unit tests of uidGener()
+  ✔ Verify uniqueness of the 1000000 generated UIDs (203.652075ms)
+  ✔ Verify that all 1000000 generated UIDs consist of 16 lowercase alphanumeric characters (0.123726ms)
+✔ Unit tests of uidGener() (203.926268ms)
+ℹ tests 4
+ℹ suites 2
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4500.885101
 ```

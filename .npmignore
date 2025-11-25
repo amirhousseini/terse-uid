@@ -1,0 +1,6 @@
+# Examples and tests folders
+examples/
+tests/
+
+# Output of 'npm pack'
+*.tgz
