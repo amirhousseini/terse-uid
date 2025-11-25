@@ -1,6 +1,6 @@
 {
   "name": "terse-uid",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Generator of unique identifiers as strings of 16 lowercase alphanumerical characters.",
   "keywords": [
     "uid"
@@ -15,10 +15,7 @@
   "exports": {
     ".": "./src/terse-uid.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amirhousseini/terse-uid.git"
-  },
+  "repository": "github:amirhousseini/terse-uid",
   "scripts": {
     "test": "node --test",
     "demo:mjs": "node examples/terse-uid.demo.mjs",
