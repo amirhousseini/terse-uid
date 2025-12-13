@@ -1,25 +1,30 @@
 # terse-uid
 Factory of unique identifiers (UID) as strings of 16 lowercase alphanumerical characters (e.g. "bi2vepv3612gd1d0").\
-The module exports a regular function "uid" returning a single UID, and a generator function "uidGener" returning a sequence of UIDs.\
+The module exports a regular function "getUid" returning a single UID, and a generator function "uidGener" returning a sequence of UIDs.\
 The generator function is more efficient for generating a high number of UIDs.
 
 ## Install
 ```
-$ npm install terse-uid
+$ npm install github:amirhousseini/terse-uid
 ```
 
-## Usage
+## Usage example
 ```js
-import { uid, uidGener } from 'terse-uid';          // ESM style
-//const { uid, uidGener } = require('terse-uid');   // CommonJS style
+import { getUid, uidGener } from 'terse-uid';           // ESM style
+//const { getUid, uidGener } = require('terse-uid');    // CommonJS style
 
 const NUM_UID = 10;
 
-// Using regular function
-for (let i = 0; i < NUM_UID; i++) console.log(uid());
+// Using the regular function
+for (let i = 0; i < NUM_UID; i++) {
+        let uid = getUid();
+        console.log(uid);
+}
 
-// Using generator function
-for (let uid of uidGener(NUM_UID)) console.log(uid);
+// Using the generator function
+for (let uid of uidGener(NUM_UID)) {
+        console.log(uid);
+}
 ```
 
 ## Test sample
